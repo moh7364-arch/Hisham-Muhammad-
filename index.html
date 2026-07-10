@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="استبانة تأثير تقنيات الذكاء الاصطناعي على جودة المعلومات المحاسبية في الشركات الصناعية اليمنية"
+    >
+
+    <title>
+        استبانة الدراسة
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+</head>
+
+
+<body>
+
+<header class="main-header">
+
+    <div class="header-container">
+
+        <div class="university-logo">
+            AI
+        </div>
+
+        <div>
+
+            <h1>
+                استبانة الدراسة
+            </h1>
+
+            <p>
+                تأثير تقنيات الذكاء الاصطناعي على جودة المعلومات المحاسبية
+                في الشركات الصناعية اليمنية
+            </p>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<main class="container">
+
+
+    <section
+        id="surveyIntro"
+        class="card intro-card"
+    >
+
+        <h2>
+            السادة / أفراد عينة الدراسة المحترمين
+        </h2>
+
+
+        <p>
+            السلام عليكم ورحمة الله وبركاته،
+        </p>
+
+
+        <p>
+
+            تهدف هذه الاستبانة إلى جمع البيانات اللازمة للدراسة الموسومة بعنوان:
+
+            <strong>
+                تأثير تقنيات الذكاء الاصطناعي على جودة المعلومات المحاسبية
+                في الشركات الصناعية اليمنية
+            </strong>
+
+            وذلك للتعرف إلى مستوى استخدام تقنيات الذكاء الاصطناعي
+            وقياس أثرها على جودة المعلومات المحاسبية،
+            فضلًا عن تحديد أبرز المعوقات التي قد تحد من تطبيقها.
+
+        </p>
+
+
+        <p>
+
+            نأمل منكم التكرم بالإجابة عن فقرات الاستبانة بكل دقة وموضوعية.
+
+            علمًا بأن البيانات الواردة ستستخدم لأغراض البحث العلمي فقط
+            وستعامل بسرية تامة.
+
+        </p>
+
+
+        <div class="privacy-notice">
+
+            لا يطلب النظام اسم المشارك أو رقم الهاتف أو البريد الإلكتروني.
+
+        </div>
+
+
+        <button
+            id="startSurveyBtn"
+            class="primary-btn"
+        >
+
+            بدء الاستبانة
+
+        </button>
+
+    </section>
+
+
+
+    <form
+        id="surveyForm"
+        class="hidden"
+    >
+
+
+        <!-- شريط التقدم -->
+
+        <section class="progress-card">
+
+            <div class="progress-info">
+
+                <span id="stepTitle">
+                    البيانات الشخصية
+                </span>
+
+                <span id="progressPercent">
+                    0%
+                </span>
+
+            </div>
+
+
+            <div class="progress-bar">
+
+                <div
+                    id="progressFill"
+                    class="progress-fill"
+                ></div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- البيانات الشخصية -->
+
+        <section
+            id="demographicsSection"
+            class="survey-step card"
+        >
+
+            <div class="section-heading">
+
+                <span class="section-number">
+                    1
+                </span>
+
+                <div>
+
+                    <h2>
+                        البيانات الشخصية
+                    </h2>
+
+                    <p>
+                        يرجى اختيار الإجابة المناسبة.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="form-group">
+
+                <label>
+                    الجنس
+                </label>
+
+                <div class="option-grid">
+
+                    <label class="choice-card">
+
+                        <input
+                            type="radio"
+                            name="gender"
+                            value="ذكر"
+                            required
+                        >
+
+                        <span>
+                            ذكر
+                        </span>
+
+                    </label>
+
+
+                    <label class="choice-card">
+
+                        <input
+                            type="radio"
+                            name="gender"
+                            value="أنثى"
+                            required
+                        >
+
+                        <span>
+                            أنثى
+                        </span>
+
+                    </label>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="form-group">
+
+                <label>
+                    المؤهل العلمي
+                </label>
+
+
+                <div class="option-grid">
+
+
+                    <label class="choice-card">
+
+                        <input
+                            type="radio"
+                            name="qualification"
+                            value="دبلوم"
+                            required
+                        >
+
+                        <span>
+                            دبلوم
+                        </span>
+
+                    </label>
+
+
+
+                    <label class="choice-card">
+
+                        <input
+                            type="radio"
+                            name="qualification"
+                            value="بكالوريوس"
+                            required
+                        >
+
+                        <span>
+                            بكالوريوس
+                        </span>
+
+                    </label>
+
+
+
+                    <label class="choice-card">
+
+                        <input
+                            type="radio"
+                            name="qualification"
+                            value="ماجستير"
+                            required
+                        >
+
+                        <span>
+                            ماجستير
+                        </span>
+
+                    </label>
+
+
+
+                    <label class="choice-card">
+
+                        <input
+                            type="radio"
+                            name="qualification"
+                            value="دكتوراه"
+                            required
+                        >
+
+                        <span>
+                            دكتوراه
+                        </span>
+
+                    </label>
+
+
+                </div>
+
+            </div>
+
+
+
+            <div class="form-group">
+
+                <label>
+                    المسمى الوظيفي
+                </label>
+
+
+                <div class="option-grid">
+
+
+                    <label class="choice-card">
+
+                        <input
+                            type="radio"
+                            name="jobTitle"
+                            value="محاسب"
+                            required
+                        >
+
+                        <span>
+                            محاسب
+                        </span>
+
+                    </label>
+
+
+
+                    <label class="choice-card">
+
+                        <input
+                            type="radio"
+                            name="jobTitle"
+                            value="مدقق حسابات"
+                            required
+                        >
+
+                        <span>
+                            مدقق حسابات
+                        </span>
+
+                    </label>
+
+
+
+                    <label class="choice-card">
+
+                        <input
+                            type="radio"
+                            name="jobTitle"
+                            value="مدير مالي"
+                            required
+                        >
+
+                        <span>
+                            مدير مالي
+                        </span>
+
+                    </label>
+
+
+
+                    <label class="choice-card">
+
+                        <input
+                            type="radio"
+                            name="jobTitle"
+                            value="موظف تقنية معلومات"
+                            required
+                        >
+
+                        <span>
+                            موظف تقنية معلومات
+                        </span>
+
+                    </label>
+
+
+
+                    <label class="choice-card">
+
+                        <input
+                            type="radio"
+                            name="jobTitle"
+                            value="أخرى"
+                            required
+                        >
+
+                        <span>
+                            أخرى
+                        </span>
+
+                    </label>
+
+
+                </div>
+
+            </div>
+
+
+
+            <div class="form-group">
+
+                <label>
+                    سنوات الخبرة
+                </label>
+
+
+                <div class="option-grid">
+
+
+                    <label class="choice-card">
+
+                        <input
+                            type="radio"
+                            name="experience"
+                            value="أقل من 5 سنوات"
+                            required
+                        >
+
+                        <span>
+                            أقل من 5 سنوات
+                        </span>
+
+                    </label>
+
+
+
+                    <label class="choice-card">
+
+                        <input
+                            type="radio"
+                            name="experience"
+                            value="5-10 سنوات"
+                            required
+                        >
+
+                        <span>
+                            5-10 سنوات
+                        </span>
+
+                    </label>
+
+
+
+                    <label class="choice-card">
+
+                        <input
+                            type="radio"
+                            name="experience"
+                            value="11-15 سنة"
+                            required
+                        >
+
+                        <span>
+                            11-15 سنة
+                        </span>
+
+                    </label>
+
+
+
+                    <label class="choice-card">
+
+                        <input
+                            type="radio"
+                            name="experience"
+                            value="أكثر من 15 سنة"
+                            required
+                        >
+
+                        <span>
+                            أكثر من 15 سنة
+                        </span>
+
+                    </label>
+
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- سيتم إنشاء الأسئلة بواسطة JavaScript -->
+
+
+        <div id="questionsContainer"></div>
+
+
+
+        <!-- أزرار التنقل -->
+
+
+        <section class="navigation-card">
+
+
+            <button
+                type="button"
+                id="previousBtn"
+                class="secondary-btn hidden"
+            >
+
+                السابق
+
+            </button>
+
+
+
+            <div class="navigation-spacer"></div>
+
+
+
+            <button
+                type="button"
+                id="nextBtn"
+                class="primary-btn"
+            >
+
+                التالي
+
+            </button>
+
+
+
+            <button
+                type="submit"
+                id="submitBtn"
+                class="success-btn hidden"
+            >
+
+                إرسال الاستبانة
+
+            </button>
+
+
+        </section>
+
+
+    </form>
+
+
+
+    <!-- رسالة النجاح -->
+
+
+    <section
+        id="successMessage"
+        class="card success-card hidden"
+    >
+
+        <div class="success-icon">
+            ✓
+        </div>
+
+
+        <h2>
+            تم إرسال الاستبانة بنجاح
+        </h2>
+
+
+        <p>
+            شكرًا لمشاركتكم في هذه الدراسة.
+        </p>
+
+
+        <p>
+            تم حفظ إجابتكم لأغراض البحث العلمي.
+        </p>
+
+
+        <div id="responseCode"></div>
+
+
+    </section>
+
+
+
+</main>
+
+
+
+<footer>
+
+    <p>
+        جميع البيانات تستخدم لأغراض البحث العلمي فقط
+    </p>
+
+</footer>
+
+
+
+<script
+    type="module"
+    src="js/survey.js"
+></script>
+
+
+</body>
+
+                          </html>
